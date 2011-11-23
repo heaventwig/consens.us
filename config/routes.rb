@@ -9,8 +9,9 @@ ConsensUs::Application.routes.draw do
 
   get "pages/about"
   
+  get "pages/signin"
   
-  
+  match '/signin/',  :to => 'pages#signin'
   match '/contact',  :to => 'pages#contact'
   match '/about',    :to => 'pages#about'
   match '/help',     :to => 'pages#help'
